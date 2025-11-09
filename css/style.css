@@ -16,12 +16,16 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--primary-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.7;
+}
+
+h1, h2, h3, .logo a {
+    font-family: 'Orbitron', sans-serif;
 }
 
 a {
@@ -89,8 +93,23 @@ h1, h2 {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     margin-bottom: 1rem;
+    background: linear-gradient(90deg, var(--accent-color), #fff, var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 5s infinite linear;
+    background-size: 200% 100%;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 .hero-content p {
@@ -112,7 +131,8 @@ h1, h2 {
 
 .cta-button:hover {
     background-color: #ffffff;
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(65, 224, 208, 0.4);
 }
 
 /* -------------------
@@ -140,7 +160,7 @@ h1, h2 {
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(65, 224, 208, 0.5);
 }
 
 .product-card img {
