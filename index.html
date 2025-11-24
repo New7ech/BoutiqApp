@@ -1,61 +1,117 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - TechShop</title>
-    <meta name="description" content="TechShop, votre boutique spécialisée en produits électroniques et tech.">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="BoutiqApp  Boutique en ligne moderne. Découvrez nos produits, promotions et achetez en toute sécurité." />
+    <title>BoutiqApp  Boutique en ligne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="main-header" role="banner">
-        <div class="logo">
-            <a href="index.html">TechShop</a>
-        </div>
-        <nav class="main-nav" role="navigation" aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
-                <li><a href="products.html">Produits</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html" aria-label="BoutiqApp accueil">
+          <img src="assets/svg/logo.svg" alt="BoutiqApp" class="logo">
+        </a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
+
+        <div class="header-actions">
+          <button class="btn btn--icon" id="search-toggle" aria-label="Rechercher">
+            
+          </button>
+          <a class="btn btn--outline cart-btn" href="cart.html" aria-label="Voir le panier">
+            <img src="assets/svg/cart.svg" alt="Panier" width="20"> <span class="cart-count" id="cart-count">0</span>
+          </a>
+          <button class="btn btn--hamburger" id="mobile-nav-toggle" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Le futur de la tech, aujourd'hui.</h1>
-                <p>Découvrez nos produits innovants et restez à la pointe de la technologie.</p>
-                <a href="products.html" class="cta-button">Explorer nos produits</a>
-            </div>
-        </section>
-
-        <section id="promotions" class="promotions-section">
-            <h2>Nouveautés & Promotions</h2>
-            <div id="promotions-grid" class="product-grid">
-                <!-- Les produits seront injectés ici par JavaScript -->
-            </div>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Mentions Légales</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <a href="#"><img src="assets/svg/twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="assets/svg/linkedin.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="assets/svg/github.svg" alt="GitHub"></a>
-            </div>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-slideshow" id="hero-slideshow" aria-hidden="true">
+        <img src="assets/images/boutiacceuil1.jpeg" class="slide active" alt="Promotions BoutiqApp 1">
+        <img src="assets/images/boutiacceuil2.jpeg" class="slide" alt="Promotions BoutiqApp 2">
+        <img src="assets/images/boutiacceuil3.jpeg" class="slide" alt="Promotions BoutiqApp 3">
+        <div class="slideshow-overlay" aria-hidden="true"></div>
+        <!-- Controls -->
+        <div class="slideshow-dots" aria-hidden="true"></div>
+      </div>
+      <div class="container hero-content-wrapper">
+        <div class="hero-content">
+          <h1>Des produits choisis pour vous</h1>
+          <p>Livraison rapide  Retours sous 30 jours  Paiement sécurisé</p>
+          <div class="hero-ctas">
+            <a href="products.html" class="btn btn--primary">Voir les produits</a>
+            <a href="#" class="btn btn--ghost">Offres</a>
+          </div>
         </div>
-        <p>&copy; 2025 TechShop. Tous droits réservés.</p>
+      </div>
+    </section>
+
+    <!-- Produits phares -->
+    <section class="container section">
+      <header class="section-head">
+        <h2>Produits populaires</h2>
+        <a href="products.html" class="link-muted">Voir tout </a>
+      </header>
+
+      <div class="grid" id="featured-products">
+        <!-- Les cartes produits sont injectées via JS pour simplicité et maintenabilité -->
+      </div>
+    </section>
+
+    <!-- Avantages -->
+    <section class="container perks">
+      <div class="perk">
+        <strong>Livraison rapide</strong>
+        <p>Expédition sous 24h</p>
+      </div>
+      <div class="perk">
+        <strong>Retour facile</strong>
+        <p>30 jours pour changer d'avis</p>
+      </div>
+      <div class="perk">
+        <strong>Support 7/7</strong>
+        <p>Assistance rapide et disponible</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img src="assets/svg/logo.svg" alt="BoutiqApp" class="logo logo--small">
+          <p> 2025 BoutiqApp  Tous droits réservés</p>
+        </div>
+        <nav aria-label="Liens utilitaires">
+          <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products.html">Produits</a></li>
+          </ul>
+        </nav>
+        <div>
+          <strong>Contact</strong>
+          <p>support@boutiqapp.example</p>
+        </div>
+      </div>
     </footer>
 
-    <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js" defer></script>
+  </body>
 </html>

@@ -1,29 +1,22 @@
-# TechShop - Portfolio de Boutique Tech
+﻿# BoutiqApp  Refonte
 
-Ce projet est un site web de portfolio pour TechShop, une boutique spécialisée dans la vente d'appareils électroniques et de produits tech. Le site a été conçu pour être moderne, responsive, et optimisé pour le SEO, en utilisant uniquement des technologies web fondamentales : HTML, CSS, et JavaScript.
+Template e-commerce simple et moderne.
 
-## Architecture du Site
+Structure:
+- `index.html`  page d'accueil
+- `products.html`  catalogue
+- `cart.html`  panier (stocké localement pour la démo)
+- `about.html`, `contact.html`  pages utilitaires
+- `css/style.css`  styles principaux
+- `js/script.js`  interaction (nav mobile, rendu produits, panier local)
+- `assets/`  SVG et images placeholder
 
-Le site est structuré de manière simple et modulaire pour faciliter la maintenance et l'évolution.
+Comment tester localement:
+1. Ouvrir `index.html` dans un navigateur (ou utiliser un serveur local pour éviter les problèmes CORS pour fetchs futurs).
 
--   **HTML**: Le site est composé de quatre pages principales :
-    -   `index.html`: La page d'accueil, qui présente la boutique et met en avant les nouveautés et promotions.
-    -   `products.html`: Le catalogue complet des produits.
-    -   `about.html`: La page "À propos", qui raconte l'histoire de la boutique.
-    -   `contact.html`: Un formulaire de contact fonctionnel.
--   **CSS**: Un unique fichier `css/style.css` est utilisé pour tous les styles du site. Il est organisé en sections logiques (global, header, hero, produits, etc.) et utilise des variables CSS (`:root`) pour une gestion facile des couleurs et des polices. Le design est responsive grâce à l'utilisation de media queries.
--   **JavaScript**: Le fichier `js/script.js` gère toute l'interactivité du site. Il est responsable de :
-    -   L'injection dynamique des produits sur la page d'accueil et la page catalogue.
-    -   La validation du formulaire de contact côté client.
--   **SVG**: Les icônes et les éléments décoratifs sont au format SVG, stockés dans le répertoire `assets/svg/`. Cela garantit une qualité d'image parfaite sur tous les écrans et une personnalisation facile.
+Recommandations:
+- Remplacer les images placeholder par des visuels produit optimisés (webp) et labels alt précis.
+- Ajouter une API backend pour gérer les produits et les commandes.
+- Intégrer un vrai paiement (Stripe, PayPal) côté serveur en production.
 
-## Choix Techniques
-
--   **Vanilla Stack**: Le site est construit sans aucun framework (comme React, Angular, ou Vue) ou librairie (comme jQuery). Ce choix a été fait pour garantir des performances optimales, une maintenance simplifiée, et une maîtrise totale du code.
--   **Responsive Design**: L'approche "mobile-first" n'a pas été strictement suivie, mais le site est entièrement responsive grâce à l'utilisation de `flexbox`, `grid`, et des `media queries` pour s'adapter à toutes les tailles d'écran.
--   **Accessibilité (WAI-ARIA)**: Des attributs WAI-ARIA ont été ajoutés pour améliorer l'accessibilité du site pour les personnes utilisant des lecteurs d'écran.
--   **SEO**: Des balises méta (`description`) ont été ajoutées à chaque page pour améliorer le référencement naturel.
-
-## Lancement du Site
-
-Pour lancer le site, il suffit d'ouvrir les fichiers `.html` dans un navigateur web. Aucune compilation ou installation n'est nécessaire.
+Licence: contenu d'exemple  adapter pour production.

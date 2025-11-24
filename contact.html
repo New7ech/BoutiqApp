@@ -1,70 +1,24 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - TechShop</title>
-    <meta name="description" content="Contactez l'équipe de TechShop pour toute question ou demande d'information.">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact  BoutiqApp</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="main-header" role="banner">
-        <div class="logo">
-            <a href="index.html">TechShop</a>
+  </head>
+  <body>
+    <header class="site-header"><div class="container header-row"><a class="brand" href="index.html"><img src="assets/svg/logo.svg" alt="Logo" class="logo"></a></div></header>
+    <main class="container section">
+      <h1>Contact</h1>
+      <form action="#" onsubmit="alert('Formulaire de contact démo  implémenter la route backend'); return false;">
+        <div style="display:flex;flex-direction:column;gap:8px;max-width:480px">
+          <label>Nom<input required type="text" name="name"></label>
+          <label>Email<input required type="email" name="email"></label>
+          <label>Message<textarea required name="message" rows="6"></textarea></label>
+          <button class="btn btn--primary">Envoyer</button>
         </div>
-        <nav class="main-nav" role="navigation" aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="products.html">Produits</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="contact-section">
-            <h1>Contactez-nous</h1>
-            <p>Une question ? Une suggestion ? N'hésitez pas à nous laisser un message.</p>
-            <form id="contact-form" class="contact-form" novalidate>
-                <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" required>
-                    <div class="error-message"></div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <div class="error-message"></div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                    <div class="error-message"></div>
-                </div>
-                <button type="submit" class="cta-button">Envoyer</button>
-                <div id="form-status"></div>
-            </form>
-        </section>
+      </form>
     </main>
-
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Mentions Légales</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <a href="#"><img src="assets/svg/twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="assets/svg/linkedin.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="assets/svg/github.svg" alt="GitHub"></a>
-            </div>
-        </div>
-        <p>&copy; 2025 TechShop. Tous droits réservés.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
+    <footer class="site-footer container"><p> 2025 BoutiqApp</p></footer>
+  </body>
 </html>

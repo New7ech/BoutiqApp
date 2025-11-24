@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <rect x="200" y="260" width="400" height="280" rx="120" fill="#fafafa" stroke="#eee"/>
+  <text x="400" y="420" font-size="28" text-anchor="middle" fill="#333">Casque - côté</text>
+</svg>

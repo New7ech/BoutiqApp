@@ -3,15 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>À propos  BoutiqApp</title>
+    <title>Panier  BoutiqApp</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="site-header"><div class="container header-row"><a class="brand" href="index.html"><img src="assets/svg/logo.svg" alt="Logo" class="logo"></a></div></header>
     <main class="container section">
-      <h1>À propos</h1>
-      <p>Bienvenue sur BoutiqApp. Notre mission est de proposer des produits de qualité à un prix juste, avec un service client humain et réactif.</p>
+      <h1>Votre panier</h1>
+      <div id="cart-items"></div>
+      <div style="margin-top:16px;display:flex;justify-content:space-between;align-items:center">
+        <div><strong>Total:</strong> <span id="cart-total">0.00</span></div>
+        <button class="btn btn--primary" onclick="alert('Fonction de paiement non implémentée en démo')">Passer au paiement</button>
+      </div>
     </main>
     <footer class="site-footer container"><p> 2025 BoutiqApp</p></footer>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
